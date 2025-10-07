@@ -4,7 +4,7 @@ import AdminLogin from "./Admin/AdminLogin";
 import UserLogin from "./component/UserLogin";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-axios.defaults.baseURL = "http://localhost:4000";
+axios.defaults.baseURL = "https://tools-social-server.vercel.app";
 axios.defaults.withCredentials = true;
 
 export default function App() {
