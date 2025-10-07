@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 const allowedOrigins = [
-    'http://localhost:3000',
+    'https://facebook-three-xi.vercel.app',
     'http://localhost:5173',
 ];
 
@@ -28,7 +28,7 @@ const {
     tester,
     loginUser,
     loginLordy,
-    getPlayers, 
+    getPlayers,
     deletePlayer
 } = require("../controllers/authController");
 
