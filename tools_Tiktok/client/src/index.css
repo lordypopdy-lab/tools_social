@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.error {
+  color: rgb(212, 24, 24);
+  font-family: sans-serif;
+}
+
+.tt-hint {
+  margin: 3px;
+  color: #cdbaba;
+  font-size: 14px;
+  margin-bottom: -10px;
+  font-family: sans-serif;
+}
+
+.tt-hint-main {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tt-player-image {
+  width: 47px;
+  height: 36px;
+  margin-left: 3px;
+  margin-bottom: 9px;
+  border-radius: 3px;
+}
+
+.tt-sign-link {
+  color: #fff;
+  margin: 3px;
+  font-family: sans-serif;
+}
+
+/* Page layout */
+.tt-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.tt-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Logo */
+.tt-header {
+  margin-bottom: 20px;
+}
+
+.tt-logo {
+  width: 150px;
+}
+
+/* Login box */
+.tt-login-box {
+  background: #121212;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+  padding: 30px 25px;
+  width: 350px;
+  text-align: center;
+}
+
+.tt-title {
+  color: #fff;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Inputs */
+.tt-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  border: 1px solid #2e2e2e;
+  border-radius: 4px;
+  background: #000;
+  color: #fff;
+}
+
+.tt-input::placeholder {
+  color: #a8a8a8;
+}
+
+.tt-input:focus {
+  outline: none;
+  border-color: #ff0050;
+}
+
+/* Login button */
+.tt-login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff0050;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.tt-login-btn:hover {
+  background: #e60048;
+}
+
+/* Divider */
+.tt-divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.tt-line {
+  flex: 1;
+  height: 1px;
+  background: #2e2e2e;
+}
+
+.tt-divider p {
+  margin: 0 12px;
+  font-size: 13px;
+  color: #a8a8a8;
+}
+
+/* Alt logins */
+.tt-alt-logins {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tt-alt-btn {
+  width: 100%;
+  padding: 10px;
+  background: #1f1f1f;
+  border: 1px solid #2e2e2e;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tt-alt-btn:hover {
+  background: #2a2a2a;
+}
+
+.tt-icon {
+  font-size: 16px;
+}
+
+/* Signup */
+.tt-signup-box {
+  border: 1px solid #2e2e2e;
+  background: #121212;
+  width: 350px;
+  padding: 18px;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+.tt-signup-box a {
+  color: #ff0050;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Footer */
+.tt-footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #a8a8a8;
+}
+
+.tt-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.tt-links a {
+  color: #a8a8a8;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 450px) {
+  .tt-login-box,
+  .tt-signup-box {
+    width: 100%;
+  }
+}

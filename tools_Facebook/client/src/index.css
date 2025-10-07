@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f2f5;
+}
+
+/* Main layout */
+.Usercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 980px;
+  margin: 90px auto;
+  padding: 0 20px;
+}
+
+.Userleft-section {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.User {
+  color: #1c1e21;
+}
+
+.Userlogo {
+  color: #1877f2;
+  font-size: 63px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.Usersubtitle {
+  font-size: 27px;
+  margin-top: 7px;
+  max-width: 400px;
+  line-height: 28px;
+  color: #1c1e21;
+}
+
+.Userprofile {
+  width: 90px;
+  border-radius: 8px;
+}
+
+.UsererrorMessage {
+  color: rgb(222, 40, 40);
+}
+
+.Userright-section {
+  width: 400px;
+}
+
+/* Login box */
+.Userlogin-box {
+  background: #fff;
+  padding: 20px 16px 28px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.User1), 0 8px 16px rgba(0,0,0,0.User1);
+  text-align: center;
+}
+
+.Userinput-field {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  font-size: 17px;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.Userinput-field:focus {
+  outline: none;
+  border-color: #1877f2;
+  box-shadow: 0 0 0 1px #1877f2;
+}
+
+.Userlogin-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1877f2;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Userlogin-btn:hover {
+  background: #166fe5;
+}
+
+.Userforgot-link {
+  display: block;
+  margin: 15px 0;
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.Userdivider {
+  height: 1px;
+  background: #dadde1;
+  margin: 20px 0;
+}
+
+.Usercreate-btn {
+  background: #42b72a;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+.Usercreate-btn:hover {
+  background: #36a420;
+}
+
+.Userpage-text {
+  margin-top: 28px;
+  font-size: 14px;
+  text-align: center;
+  color: #1c1e21;
+}
+
+.Userpage-text a {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 900px) {
+  .Usercontainer {
+    flex-direction: column;
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  .Userleft-section {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .Userright-section {
+    width: 100%;
+    margin-top: -30px;
+    max-width: 400px;
+  }
+
+  .Userlogo {
+    font-size: 50px;
+  }
+
+  .Usersubtitle {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}

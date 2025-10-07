@@ -1,0 +1,207 @@
+/* ---------- base layout ---------- */
+:root {
+  --neon: #00ff00;
+  --neon-dim: #008800;
+  --bg: #000;
+}
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--neon);
+  font-family: "Courier New", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* container holds the binary column and the main card */
+.admincontainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  background: #000;
+}
+
+/* ---------- Binary / Matrix column ---------- */
+.binary-column {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 420px;
+  min-width: 220px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 16px;
+  z-index: 1;
+  opacity: 0.18;
+}
+
+.binary-scroll {
+  height: 140%;
+  animation: scrollUp 22s linear infinite;
+}
+
+.binary-text {
+  white-space: pre-wrap;
+  font-size: 11px;
+  line-height: 1.25;
+  color: var(--neon);
+  opacity: 0.95;
+  text-shadow: 0 0 6px rgba(0,255,0,0.25);
+  margin: 0;
+}
+
+@keyframes scrollUp {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-50%); }
+}
+
+/* hide on very small screens */
+@media (max-width: 880px) {
+  .binary-column { width: 30%; opacity: 0.15; }
+}
+@media (max-width: 560px) {
+  .binary-column { display: flex; }
+}
+
+/* ---------- Login box ---------- */
+.login-box {
+  position: relative;
+  z-index: 2;
+  background: rgba(0,0,0,0.85);
+  border: 1px solid rgba(0,255,0,0.15);
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 0 28px rgba(0,255,0,0.06);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+
+/* hacker svg head container */
+.hacker-head {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -6px;
+}
+
+.hacker-svg {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 8px rgba(0,255,0,0.14));
+}
+
+/* Title with typing effect */
+.title {
+  font-size: 20px;
+  margin: 6px 0 12px;
+  color: var(--neon);
+  text-shadow: 0 0 8px rgba(0,255,0,0.2);
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid var(--neon);
+  width: 0;
+  animation: typing 2.4s steps(18) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink { 50% { border-color: transparent; } }
+
+.input-group {
+  width: 100%;
+  text-align: left;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: var(--neon);
+  text-shadow: 0 0 4px rgba(0,255,0,0.12);
+}
+
+/* Fixed Inputs */
+.login-box input {
+  width: 100%;
+  padding: 12px 10px;
+  background: transparent;
+  border: 1px solid rgba(0,255,0,0.3);
+  border-radius: 6px;
+  color: var(--neon);
+  font-size: 15px;
+  outline: none;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.login-box input::placeholder {
+  color: var(--neon-dim);
+  opacity: 0.8;
+}
+
+.login-box input:focus {
+  border-color: var(--neon);
+  box-shadow: 0 0 12px rgba(0,255,0,0.4);
+}
+
+/* Button */
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 1px solid var(--neon);
+  color: var(--neon);
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+.login-box button:hover {
+  background: var(--neon);
+  color: black;
+  box-shadow: 0 0 16px rgba(0,255,0,0.25);
+}
+
+/* ---------- Responsive fix ---------- */
+@media (max-width: 980px) {
+  .admincontainer { padding: 18px; }
+  .binary-column { width: 34%; max-width: 300px; }
+  .login-box { max-width: 360px; padding: 22px; }
+}
+
+@media (max-width: 560px) {
+  .admincontainer {
+    justify-content: center;
+    align-items: center;
+  }
+  .login-box {
+    width: 100%;
+    max-width: 420px;
+    padding: 18px;
+    margin: 0 auto;
+  }
+  .title { font-size: 18px; }
+  .hacker-head { width: 110px; height: 110px; margin-bottom: 0; }
+}

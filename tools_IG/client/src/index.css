@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000; /* Instagram dark background */
+  color: #fff;
+}
+
+.error {
+  font-size: 15px;
+  font-family: sans-serif;
+  color: rgb(200, 29, 29);
+}
+
+.player_logo {
+  width: 80px;
+  border-radius: 7px;
+}
+
+.ig-hint {
+  color: #a8a8a8;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+/* Page wrapper */
+.ig-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Centered main section */
+.ig-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Login box */
+.ig-login-box {
+  border: 1px solid #262626;
+  background: #000;
+  padding: 40px 40px 30px;
+  width: 350px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ig-logo {
+  color: #fff;
+  font-family: 'Billabong', cursive;
+  font-size: 48px;
+  margin-bottom: 18px;
+}
+
+/* Inputs */
+.ig-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  border: 1px solid #262626;
+  border-radius: 3px;
+  background: #121212;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.ig-input::placeholder {
+  color: #a8a8a8;
+}
+
+.ig-input:focus {
+  outline: none;
+  border-color: #8e8e8e;
+}
+
+/* Login button */
+.ig-login-btn {
+  width: 100%;
+  padding: 10px;
+  background: #385898;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.ig-divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.ig-line {
+  flex: 1;
+  height: 1px;
+  background: #262626;
+}
+
+.ig-divider p {
+  margin: 0 18px;
+  font-size: 13px;
+  color: #a8a8a8;
+}
+
+/* Links */
+.ig-fb-login {
+  display: block;
+  color: #0095f6;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.ig-forgot {
+  display: block;
+  font-size: 15px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.ig-dont {
+  color: #fff;
+}
+
+/* Signup box */
+.ig-signup-box {
+  border: 1px solid #262626;
+  background: #000;
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.ig-signup-box a {
+  color: #0095f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Footer */
+.ig-footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 12px;
+  color: #a8a8a8;
+}
+
+.ig-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 15px;
+  margin-bottom: 15px;
+}
+
+.ig-links a {
+  color: #a8a8a8;
+  text-decoration: none;
+}
+
+.ig-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.ig-bottom select {
+  background: #000;
+  border: none;
+  color: #a8a8a8;
+  font-size: 12px;
+}
+
+.ig-bottom p {
+  margin: 0;
+}
